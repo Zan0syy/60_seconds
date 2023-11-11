@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div style="margin-top: 20px;">
+        <div class="play_console_l" >
+            <span id="play_console_l">
+                <h2>ИНВЕРНТАРЬ</h2>
+            </span>
+            <span>
+                <h4 class="fullness">заполнен на <span id="fullness">0</span> из <span id="max_fullness">0</span></h4>
+            </span>
+        </div>
+        <div class="play_console_m">
+            <p class="text" id="text"><h1 id="secs">60 секунд до...</h1></p>
+            <div class="st" id="st">
+                <div class="start"><button class="aab" onclick="start_game(this)"><h3>Начать</h3></button></div>
+            </div>
+        </div>
+        <div class="play_console_r">
+            <h2>СТАТИСТИКА</h2>
+            <div class="stats" id="stats">
+                <span>ЕДА: <span id="meal">0</span>
+                <p class="p_st"></p>
+                <span>ВОДА: <span id="water">0</span></span>
+                <p class="p_st"></p>
+                <span>ЗАЩИТА: <span id="defence">0</span></span>
+                <p class="p_st"></p>
+                <span>МОНЕТЫ: <span id="coins">0</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>

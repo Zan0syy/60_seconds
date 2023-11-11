@@ -1,0 +1,209 @@
+@font-face {
+    font-family:minecraft; /* Гарнитура шрифта */
+    src: local(minecraft), url(minecraft.ttf); /* Для остальных браузеров */
+}
+
+:root{
+    --lines-kitchen: none;
+    --lines-room: none;
+    --lines-toilet: none;
+    --lines-coridor: none; 
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    margin: auto;
+    background-color: #181818;
+    width:1400px;
+    
+}
+
+span{
+    color:#f7f6f5;
+    font-family: minecraft;
+}
+
+p{
+    font-size: large;
+    margin-left: 5px;
+    color:#f7f6f5;
+    font-family: minecraft;
+}
+
+.p_inv{
+    font-size: x-small;
+    margin-left: 5px;
+    color:#f7f6f5;
+    font-family: minecraft;
+}
+
+h1{
+    color:#f7f6f5;
+    text-align: center;
+    font-family: minecraft;
+}
+h2{
+    color:#f7f6f5;
+    text-align: center;
+    font-family: minecraft;
+
+}
+h3{
+    color:#f7f6f5;
+    text-align: center;
+    font-family: minecraft;
+
+}
+h4{
+    color:#f7f6f5;
+    text-align: center;
+    font-family: minecraft;
+}
+h5{
+    left: 5px;
+    color:#f7f6f5;
+    text-align: left;
+    font-family: minecraft;
+}
+h6{
+    color:#f7f6f5;
+    text-align: left;
+    font-family: minecraft;
+}
+
+.items{
+    position: relative;
+    left: 15px;
+}
+
+.st{
+    display: block;
+}
+
+.p_st{
+    font-size: 1px;
+}
+
+.play_console_m{
+    margin-left:300px;
+    position:relative; 
+    height: 400px;
+    width: 800px;
+    background-color: #1f1f1f;
+    border:8px solid #151719;
+}
+
+.play_console_l{
+    margin-left: 50px;
+    position:absolute; 
+    height: 400px;
+    width: 200px;
+    background-color: #1f1f1f;
+    border:8px solid #151719;
+}
+
+.play_console_r{
+    margin-top: -416px;
+    margin-left: 1150px;
+    position: absolute; 
+    height: 400px;
+    width: 200px;
+    background-color: #1f1f1f;
+    border:8px solid #151719;
+}
+
+.stats{
+    position: relative;
+    margin-left: 10px;
+}
+
+.start{
+    position: absolute;
+    bottom: 50px;
+    left: 353.5px;
+    background-color: #1f1f1f;
+    z-index: 1;
+    border: 3px solid #151719;
+}
+
+.aab{
+    top: 0px;
+    left: 0px;
+    position: reletive;
+    width:0%;
+    background-color: #475245;
+    z-index: 2;
+    transition: all .35s;
+}
+
+.start:hover .aab{
+    width: 100%;
+}
+
+
+.start_text{
+    text-align: left;
+}
+
+.dif_but{
+    border:0px solid #1f1f1f;
+    background-color: rgba(1,1,1,0);
+}
+.dif_but:before{
+    border:0px solid #1f1f1f;
+    background-color: rgba(1,1,1,0);
+}
+.dif_but:after{
+    border:0px solid #1f1f1f;
+    background-color: rgba(1,1,1,0);
+}
+.dif_but:hover{
+    background-color: rgba(1,1,1,0);
+    border:0px solid #1f1f1f;
+}
+
+.continue_but{
+    position: absolute;
+    border:0px solid #1f1f1f;
+    background-color: rgba(1,1,1,0);
+    bottom: 20px;
+    left: 5px;
+}
+ 
+.fullness{
+    position: absolute;
+    bottom: 5px;
+}
+.continue_but:disabled{
+    
+    border: 3px solid #151719;
+}
+
+.next_room_but:disabled{
+    
+    border: 3px solid #151719;
+}
+
+.next_room_but{
+    position: absolute;
+    border:0px solid #1f1f1f;
+    background-color: rgba(1,1,1,0);
+    bottom: 100px;
+    left: 5px;
+    
+}
+
+#kitchen{
+    text-decoration: var(--lines-kitchen);
+}
+#room{
+    text-decoration: var(--lines-room);
+}
+#toilet{
+    text-decoration: var(--lines-toilet);
+}
+#coridor{
+    text-decoration: var(--lines-coridor);
+}
