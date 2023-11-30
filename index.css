@@ -142,7 +142,38 @@ h6{
     width: 100%;
 }
 
+.use_item {
+    top: 0px;
+    left: 0px;
+    position: reletive;
+    width:0%;
+    background-color: #475245;
+    z-index: 2;
+    transition: all .50s;
+}
 
+.start1{
+    position: absolute;
+    bottom: 50px;
+    left: 353.5px;
+    background-color: #1f1f1f;
+    z-index: 1;
+    border: 3px solid #151719;
+}
+
+.start1:hover .use_item{
+    width: 100%;
+	height: 110%;
+}
+
+.start12 {
+	position: absolute;
+    bottom: 50px;
+    left: 353.5px;
+    background-color: #1f1f1f;
+    z-index: 1;
+    border: 3px solid #151719;
+}
 .start_text{
     text-align: left;
 }
@@ -191,9 +222,11 @@ h6{
     border:0px solid #1f1f1f;
     background-color: rgba(1,1,1,0);
     bottom: 100px;
-    left: 5px;
-    
+    left: 5px;   
 }
+
+
+
 
 #kitchen{
     text-decoration: var(--lines-kitchen);

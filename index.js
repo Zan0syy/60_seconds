@@ -506,6 +506,7 @@ function bunker(){
 
 }
 
+
 function start_game_in_bunker(){
     clear_text();
     upd_inv()
@@ -543,5 +544,61 @@ function start_game_in_bunker(){
             document.getElementById("water").innerHTML = water;
         }
     }
+}
+let gog = 0
+let day_counter = 0;
+
+function bunk(){
+	bunker1();
+}
+
+function bunker1(){
+    clear_text();
+    gog = getRandomInRange(0, 4)
+    if(day_counter < 4){
+			switch(gog){
+			case 0 :
+				day_counter++;
+				document.getElementById("text").innerHTML += "<h2>",day_counter,"</h2>";
+				add_text('Вы решили осмотреться в убежище в поисках чего-нибудь. На виду ничего не лежит, может отодвинуть шкаф? <p class="p_st"></p> Деёствительно, за шкафом что-то винднеется, но не понятно, что это.');
+				add_text('<div class="start1"><button class="use_item" onclick="bunk(this)"><h3>использовать фонарик</h3></button></div>')
+				break;
+
+			case 1 :
+				day_counter++;
+				document.getElementById("text").innerHTML += "<h2>",day_counter,"</h2>";
+				add_text('Снаружи доносятся странные звуки что это может быть?');
+				add_text('<div class="start1"><button class="use_item" onclick="bunk(this)"><h3>Проверить</h3></button></div>')
+				break;
+
+			case 2 :
+				day_counter++;
+				document.getElementById("text").innerHTML += "<h2>",day_counter,"</h2>";
+				add_text('На соседней улице распологается дом пристарелых. Там точно могли остаться припасы, стоит проверить');
+				add_text('<div class="start1"><button class="use_item" onclick="bunk(this)"><h3>Проверить</h3></button></div>')
+				break;
+
+			case 3 :
+				day_counter++;
+				document.getElementById("text").innerHTML += "<h2>",day_counter,"</h2>";
+				add_text('Во время последней ночи, Вы получили незначительные раны, но в условиях постапокалипсиса они могут причить серьёзный ущерб.');
+				add_text('Её стоит обеззаразить')
+				add_text('<div class="start1" style="left:403.5px;"><button class="use_item" onclick="bunk(this)"> <h3>Использовать аптечку</h3></button></div>')
+				add_text('<div class="start1" style="left:153.5px;"><button class="use_item"  onclick="bunk(this)"><h3>Использовать мыло</h3></button></div>')
+				break;
+
+			case 4 :
+				day_counter++;
+				document.getElementById("text").innerHTML += "<h2>",day_counter,"</h2>";
+				add_text('четыре');
+				add_text('<div class="start1"><button class="use_item" onclick="bunk(this)"><h3>Проверить</h3></button></div>')
+				break;   
+    
+			}
+    }
+	if (day_counter =>5 || day_counter <= 7){
+		day_counter++;
+		console.log(day_counter)
+	}
 }
 //89080077324
